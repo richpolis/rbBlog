@@ -34,3 +34,1349 @@ Started GET "/rails/info/properties" for 172.17.42.1 at 2015-04-28 20:19:15 +000
 Processing by Rails::InfoController#properties as */*
   Rendered /home/codio/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/railties-4.2.0/lib/rails/templates/rails/info/properties.html.erb (0.7ms)
 Completed 200 OK in 73ms (Views: 22.5ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for 172.17.42.1 at 2015-05-21 17:18:24 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/codio/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 31ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.17.42.1 at 2015-05-21 17:27:58 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/codio/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (3.1ms)
+Completed 200 OK in 41ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.17.42.1 at 2015-05-21 17:30:13 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/codio/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (2.5ms)
+Completed 200 OK in 40ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/properties" for 172.17.42.1 at 2015-05-21 17:30:36 +0000
+Processing by Rails::InfoController#properties as */*
+  Rendered /home/codio/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/railties-4.2.0/lib/rails/templates/rails/info/properties.html.erb (0.4ms)
+Completed 200 OK in 52ms (Views: 14.4ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 172.17.42.1 at 2015-05-21 17:33:44 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 988ms (Views: 987.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-21 17:33:45 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-21 17:33:45 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-21 17:33:45 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-21 17:33:46 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-21 17:33:46 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-21 17:33:46 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-21 17:33:46 +0000
+
+
+Started GET "/articles/new" for 172.17.42.1 at 2015-05-21 17:42:21 +0000
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (53.8ms)
+Completed 200 OK in 418ms (Views: 390.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-21 17:42:22 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-21 17:42:22 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-21 17:42:22 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-21 17:42:22 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-21 17:42:22 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-21 17:42:22 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-21 17:42:22 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-21 17:42:22 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-21 17:42:22 +0000
+  [1m[36m (18.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateArticles (20150521174409)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "text" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150521174409"]]
+  [1m[35m (6.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 172.17.42.1 at 2015-05-25 22:29:19 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 146ms (Views: 128.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-25 22:29:20 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-25 22:29:20 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-25 22:29:20 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-25 22:29:20 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-25 22:29:20 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-25 22:29:20 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-25 22:29:20 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-25 22:29:20 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-25 22:29:20 +0000
+
+
+Started GET "/" for 172.17.42.1 at 2015-05-26 13:09:23 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 159ms (Views: 131.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 13:09:23 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 13:09:23 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 13:09:24 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 13:09:24 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 13:09:24 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 13:09:24 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 13:09:24 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 13:09:24 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 13:09:24 +0000
+
+
+Started GET "/articles" for 172.17.42.1 at 2015-05-26 13:09:26 +0000
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 95ms (Views: 91.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 172.17.42.1 at 2015-05-26 13:09:29 +0000
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 100ms (Views: 99.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 172.17.42.1 at 2015-05-26 13:09:33 +0000
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 172.17.42.1 at 2015-05-26 13:14:03 +0000
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 91ms (Views: 81.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles" for 172.17.42.1 at 2015-05-26 13:14:05 +0000
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 172.17.42.1 at 2015-05-26 13:14:07 +0000
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 172.17.42.1 at 2015-05-26 13:14:15 +0000
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DYX19F3wes16+mHeAj+MRkOio8lCsKl8O39PFZgDtMwBa+3Y4qohHbyvvluCfQ8iKLIeO9KOedVM8lKUmLwFcw==", "article"=>{"title"=>"Nuevo", "text"=>"Nuevo articulo"}, "commit"=>"Save Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (13.0ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Nuevo"], ["text", "Nuevo articulo"], ["created_at", "2015-05-26 13:14:15.573067"], ["updated_at", "2015-05-26 13:14:15.573067"]]
+  [1m[36m (4.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://brave-ford.codio.io:3000/articles/1
+Completed 302 Found in 28ms (ActiveRecord: 18.1ms)
+
+
+Started GET "/articles/1" for 172.17.42.1 at 2015-05-26 13:14:15 +0000
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 88ms (Views: 71.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 13:14:16 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 13:14:16 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 13:14:16 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 13:14:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 13:14:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 13:14:16 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 13:14:16 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 13:14:16 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 13:14:16 +0000
+
+
+Started GET "/articles" for 172.17.42.1 at 2015-05-26 13:14:18 +0000
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 172.17.42.1 at 2015-05-26 13:14:20 +0000
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 172.17.42.1 at 2015-05-26 13:14:29 +0000
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tMQbY3CEqzeEawiUD1hsFBb5ZlkpSHMet/BktETKwVq4KgNPz97w50I+1xGPGu9wfenbq7l2o7fAfXk1RHVw5Q==", "article"=>{"title"=>"Otro", "text"=>"otro articulo"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Otro"], ["text", "otro articulo"], ["created_at", "2015-05-26 13:14:29.176704"], ["updated_at", "2015-05-26 13:14:29.176704"]]
+  [1m[35m (5.2ms)[0m  commit transaction
+Redirected to http://brave-ford.codio.io:3000/articles/2
+Completed 302 Found in 9ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/articles/2" for 172.17.42.1 at 2015-05-26 13:14:29 +0000
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered articles/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 51ms (Views: 49.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 13:14:29 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 13:14:29 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 13:14:29 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 13:14:29 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 13:14:29 +0000
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 13:14:29 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 13:14:29 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 13:14:29 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 13:14:29 +0000
+
+
+Started GET "/articles" for 172.17.42.1 at 2015-05-26 13:14:31 +0000
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 172.17.42.1 at 2015-05-26 13:14:33 +0000
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 80ms (Views: 79.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 172.17.42.1 at 2015-05-26 13:14:41 +0000
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uOGtiXh9mMIGRucsB99OsNPeX4EDeE5zfNVig0PQy+u0D7WlxyfDEsATOKmHnc3UuM7ic5NGntoLWH8CQ296VA==", "article"=>{"title"=>"Uno mas", "text"=>"Un articulo mas"}, "commit"=>"Save Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Uno mas"], ["text", "Un articulo mas"], ["created_at", "2015-05-26 13:14:41.048904"], ["updated_at", "2015-05-26 13:14:41.048904"]]
+  [1m[36m (11.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://brave-ford.codio.io:3000/articles/3
+Completed 302 Found in 15ms (ActiveRecord: 11.9ms)
+
+
+Started GET "/articles/3" for 172.17.42.1 at 2015-05-26 13:14:41 +0000
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered articles/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 13:14:41 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 13:14:41 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 13:14:41 +0000
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 13:14:41 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 13:14:41 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 13:14:41 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 13:14:41 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 13:14:41 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 13:14:41 +0000
+
+
+Started GET "/articles" for 172.17.42.1 at 2015-05-26 13:14:43 +0000
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 172.17.42.1 at 2015-05-26 13:16:07 +0000
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 56ms (Views: 50.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/articles" for 172.17.42.1 at 2015-05-26 13:16:13 +0000
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g4dE6EVMemgz6HP+wE98zYWK13eUOL4AZXx8AY9028OPaVzE+hYhuPW9rHtADf+p7ppqhQQGbqkS8WGAj8tqfA==", "article"=>{"title"=>"", "text"=>"algo sin titulo"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://brave-ford.codio.io:3000/articles
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 172.17.42.1 at 2015-05-26 13:16:13 +0000
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 43ms (Views: 42.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 13:16:14 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 13:16:14 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 13:16:14 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 13:16:14 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 13:16:14 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 13:16:14 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 13:16:14 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 13:16:14 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 13:16:14 +0000
+
+
+Started GET "/articles/new" for 172.17.42.1 at 2015-05-26 13:16:17 +0000
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 57ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 172.17.42.1 at 2015-05-26 13:18:03 +0000
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fbKdxxGUH7Mm+xcAyT4JzHYrSWILtiBivnm65OHx6JdxXIXrrs5EY+CuyIVJfIqoHTv0kJuI8MvJ9Kdl4U5ZKA==", "article"=>{"title"=>"", "text"=>"algo sin titulo"}, "commit"=>"Save Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered articles/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 52ms (Views: 43.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 13:18:03 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 13:18:04 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 13:18:04 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 13:18:04 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 13:18:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 13:18:04 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 13:18:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 13:18:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 13:18:04 +0000
+
+
+Started POST "/articles" for 172.17.42.1 at 2015-05-26 13:20:02 +0000
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+5OGs9P3exo9q4tIW0RQZcC9tnaZIh3MaFMAujhZpiL3fZ6fbK0gyvv+VM3bBtMBq60LhAkczWUf3h07OOYXnQ==", "article"=>{"title"=>"", "text"=>"algo sin titulo"}, "commit"=>"Save Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered articles/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 63ms (Views: 59.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 13:20:02 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 13:20:02 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 13:20:03 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 13:20:03 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 13:20:03 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 13:20:03 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 13:20:03 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 13:20:03 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 13:20:03 +0000
+
+
+Started GET "/articles" for 172.17.42.1 at 2015-05-26 13:27:10 +0000
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 51ms (Views: 48.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 13:27:11 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 13:27:11 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 13:27:11 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 13:27:11 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 13:27:11 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 13:27:11 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 13:27:11 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 13:27:11 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 13:27:11 +0000
+
+
+Started GET "/articles/1/edit" for 172.17.42.1 at 2015-05-26 13:27:14 +0000
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 64ms (Views: 62.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 172.17.42.1 at 2015-05-26 13:27:16 +0000
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 42ms (Views: 41.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/2/edit" for 172.17.42.1 at 2015-05-26 13:27:18 +0000
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered articles/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 172.17.42.1 at 2015-05-26 13:27:19 +0000
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 49ms (Views: 48.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/3/edit" for 172.17.42.1 at 2015-05-26 13:27:20 +0000
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered articles/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 172.17.42.1 at 2015-05-26 13:27:21 +0000
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/1" for 172.17.42.1 at 2015-05-26 13:27:23 +0000
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/1/edit" for 172.17.42.1 at 2015-05-26 13:27:25 +0000
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered articles/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 83ms (Views: 81.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 172.17.42.1 at 2015-05-26 13:27:27 +0000
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/1/edit" for 172.17.42.1 at 2015-05-26 13:29:57 +0000
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered articles/_form.html.erb (2.3ms)
+  Rendered articles/edit.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/articles/1" for 172.17.42.1 at 2015-05-26 13:30:06 +0000
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WReYs5QvyAdT/MHtKy54HD1ITcaH7JsdBtxIEk8PWxRV+YCfK3WT15WpHmirbPt4VljwNBfSS7RxUVWTT7Dqqw==", "article"=>{"title"=>"Nuevo", "text"=>"Actualizando el articulo"}, "commit"=>"Update Article", "id"=>"1"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "articles" SET "text" = ?, "updated_at" = ? WHERE "articles"."id" = ?  [["text", "Actualizando el articulo"], ["updated_at", "2015-05-26 13:30:06.996327"], ["id", 1]]
+  [1m[36m (4.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://brave-ford.codio.io:3000/articles/1
+Completed 302 Found in 10ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/articles/1" for 172.17.42.1 at 2015-05-26 13:30:07 +0000
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 13:30:07 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 13:30:08 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:08 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:08 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 13:30:08 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:08 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:08 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:08 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:08 +0000
+
+
+Started GET "/articles" for 172.17.42.1 at 2015-05-26 13:30:11 +0000
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/2/edit" for 172.17.42.1 at 2015-05-26 13:30:15 +0000
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered articles/_form.html.erb (2.5ms)
+  Rendered articles/edit.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 72ms (Views: 70.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/articles/2" for 172.17.42.1 at 2015-05-26 13:30:23 +0000
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"03L2l9nYetiYR6/cE6RTFqlSR22e4vb3qgVl9M1rDSLfnO67ZoIhCF4ScFmT5tBywkL6nw7cJl7diHh1zdS8nQ==", "article"=>{"title"=>"Otro", "text"=>"otro articulo actualizado"}, "commit"=>"Update Article", "id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered articles/_form.html.erb (2.4ms)
+  Rendered articles/edit.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 51ms (Views: 48.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:23 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 13:30:23 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:23 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 13:30:23 +0000
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 13:30:23 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:23 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:23 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:23 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:23 +0000
+
+
+Started PATCH "/articles/2" for 172.17.42.1 at 2015-05-26 13:30:34 +0000
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rqFXrqogdWV2LIBScVlirLh1tgqCiNGaFASquwfP8zmiT0+CFXoutbB5X9fxG+HI02UL+BK2ATNjibc6B3BChg==", "article"=>{"title"=>"Otro articulo", "text"=>"otro articulo actualizado"}, "commit"=>"Update Article", "id"=>"2"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "articles" SET "title" = ?, "text" = ?, "updated_at" = ? WHERE "articles"."id" = ?  [["title", "Otro articulo"], ["text", "otro articulo actualizado"], ["updated_at", "2015-05-26 13:30:34.621734"], ["id", 2]]
+  [1m[36m (5.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://brave-ford.codio.io:3000/articles/2
+Completed 302 Found in 9ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/articles/2" for 172.17.42.1 at 2015-05-26 13:30:34 +0000
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:35 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:35 +0000
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 13:30:35 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 13:30:35 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:35 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 13:30:35 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:35 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:35 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:35 +0000
+
+
+Started GET "/articles" for 172.17.42.1 at 2015-05-26 13:30:37 +0000
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/3/edit" for 172.17.42.1 at 2015-05-26 13:30:41 +0000
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered articles/_form.html.erb (2.9ms)
+  Rendered articles/edit.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 74ms (Views: 71.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/articles/3" for 172.17.42.1 at 2015-05-26 13:30:51 +0000
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OOmDzezTQYEWeT99+owSaExKVXroWxIMDeytUUtNwG80B5vhU4kaUdAs4Ph6zpEMJ1roiHhlwqV6YbDQS/Jx0A==", "article"=>{"title"=>"Uno mas", "text"=>"Un articulo mas actualizado"}, "commit"=>"Update Article", "id"=>"3"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "articles" SET "text" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["text", "Un articulo mas actualizado"], ["updated_at", "2015-05-26 13:30:51.636832"], ["id", 3]]
+  [1m[35m (10.0ms)[0m  commit transaction
+Redirected to http://brave-ford.codio.io:3000/articles/3
+Completed 302 Found in 18ms (ActiveRecord: 10.4ms)
+
+
+Started GET "/articles/3" for 172.17.42.1 at 2015-05-26 13:30:51 +0000
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 42ms (Views: 41.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 13:30:52 +0000
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 13:30:52 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:52 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 13:30:52 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:52 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:52 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:52 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:52 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 13:30:52 +0000
+
+
+Started GET "/articles" for 172.17.42.1 at 2015-05-26 13:30:54 +0000
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 172.17.42.1 at 2015-05-26 13:35:02 +0000
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 55ms (Views: 52.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 13:35:03 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 13:35:03 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 13:35:03 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 13:35:03 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 13:35:03 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 13:35:03 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 13:35:03 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 13:35:03 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 13:35:03 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 13:35:26 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 13:35:30 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 13:35:34 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 13:35:39 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateComments (20150526133728)
+  [1m[35m (5.1ms)[0m  begin transaction
+  [1m[36m (2.1ms)[0m  [1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "commenter" varchar, "body" text, "article_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_comments_on_article_id" ON "comments" ("article_id")[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150526133728"]]
+  [1m[36m (4.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+[0m
+
+
+Started GET "/articles" for 172.17.42.1 at 2015-05-26 13:42:30 +0000
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 301ms (Views: 258.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 13:42:31 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 13:42:32 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 13:42:32 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 13:42:32 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 13:42:32 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 13:42:32 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 13:42:32 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 13:42:32 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 13:42:32 +0000
+
+
+Started GET "/articles/1" for 172.17.42.1 at 2015-05-26 13:52:05 +0000
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  Rendered articles/show.html.erb within layouts/application (122.1ms)
+Completed 200 OK in 718ms (Views: 677.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/articles/1" for 172.17.42.1 at 2015-05-26 13:52:06 +0000
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  Rendered articles/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 74ms (Views: 72.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 13:52:06 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 13:52:06 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 13:52:07 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 13:52:07 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 172.17.42.1 at 2015-05-26 13:52:07 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 13:52:07 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 13:52:07 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 172.17.42.1 at 2015-05-26 13:52:07 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 13:52:07 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 13:52:07 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 13:52:07 +0000
+
+
+Started POST "/articles/1/comments" for 172.17.42.1 at 2015-05-26 13:52:22 +0000
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ioNQdzhWlQUDkJStnMwigVPzd2cOtf8YtR1l0Pg1Kd2GbUhbhwzO1cXFSygcjqHlOOPKlZ6LL7HCkHhR+IqYYg==", "comment"=>{"commenter"=>"Richpolis", "body"=>"Me parece muy bueno"}, "commit"=>"Create Comment", "article_id"=>"1"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["commenter", "Richpolis"], ["body", "Me parece muy bueno"], ["article_id", 1], ["created_at", "2015-05-26 13:52:22.823031"], ["updated_at", "2015-05-26 13:52:22.823031"]]
+  [1m[36m (14.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://brave-ford.codio.io:3000/articles/1
+Completed 302 Found in 23ms (ActiveRecord: 16.1ms)
+
+
+Started GET "/articles/1" for 172.17.42.1 at 2015-05-26 13:52:22 +0000
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  Rendered articles/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 81ms (Views: 79.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 13:52:23 +0000
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 13:52:23 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 13:52:23 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 13:52:23 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 13:52:23 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 13:52:23 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 13:52:23 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 13:52:23 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 13:52:23 +0000
+
+
+Started POST "/articles/1/comments" for 172.17.42.1 at 2015-05-26 13:52:45 +0000
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lNvx5t95c4aOc/P/VuSQrFCrd04TEwAl4gRJUSXsNzyYNenKYCMoVkgmLHrWphPIO7vKvIMt0IyViVTQJVOGgw==", "comment"=>{"commenter"=>"Richpolis", "body"=>"Esta genial ruby and rails"}, "commit"=>"Create Comment", "article_id"=>"1"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (9.5ms)[0m  INSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["commenter", "Richpolis"], ["body", "Esta genial ruby and rails"], ["article_id", 1], ["created_at", "2015-05-26 13:52:45.569597"], ["updated_at", "2015-05-26 13:52:45.569597"]]
+  [1m[36m (4.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://brave-ford.codio.io:3000/articles/1
+Completed 302 Found in 23ms (ActiveRecord: 15.2ms)
+
+
+Started GET "/articles/1" for 172.17.42.1 at 2015-05-26 13:52:45 +0000
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  Rendered articles/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 75ms (Views: 72.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 13:52:46 +0000
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 13:52:46 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 13:52:46 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 172.17.42.1 at 2015-05-26 13:52:46 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 13:52:46 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 13:52:46 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 13:52:46 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 13:52:46 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 13:52:46 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 172.17.42.1 at 2015-05-26 13:52:46 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 13:52:46 +0000
+
+
+Started GET "/articles/1" for 172.17.42.1 at 2015-05-26 13:55:03 +0000
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  Rendered comments/_comment.html.erb (1.0ms)
+  Rendered articles/show.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 92ms (Views: 90.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 13:55:04 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 172.17.42.1 at 2015-05-26 13:55:04 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 13:55:04 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 13:55:04 +0000
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 13:55:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 13:55:04 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 13:55:04 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 172.17.42.1 at 2015-05-26 13:55:04 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 13:55:04 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 13:55:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 13:55:04 +0000
+
+
+Started GET "/articles/1" for 172.17.42.1 at 2015-05-26 13:57:03 +0000
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/home/codio/workspace/app/views/articles/show.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+'.freeze;0 render "comments/form" 
+                 ^):
+  app/views/articles/show.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+
+
+  Rendered /home/codio/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /home/codio/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.0ms)
+  Rendered /home/codio/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/codio/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.3ms)
+
+
+Started GET "/articles/1" for 172.17.42.1 at 2015-05-26 13:57:14 +0000
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 1]]
+  Rendered comments/_comment.html.erb (0.1ms)
+  Rendered comments/_form.html.erb (2.8ms)
+  Rendered articles/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 63ms (Views: 62.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 13:57:15 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 172.17.42.1 at 2015-05-26 13:57:15 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 13:57:15 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 13:57:15 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 172.17.42.1 at 2015-05-26 13:57:15 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 13:57:15 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 13:57:15 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 13:57:15 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 13:57:15 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 13:57:15 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 13:57:15 +0000
+
+
+Started GET "/articles/1" for 172.17.42.1 at 2015-05-26 14:01:34 +0000
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 1]]
+  Rendered comments/_comment.html.erb (3.4ms)
+  Rendered comments/_form.html.erb (4.3ms)
+  Rendered articles/show.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 149ms (Views: 130.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 14:01:35 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 14:01:35 +0000
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 14:01:35 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 172.17.42.1 at 2015-05-26 14:01:35 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:35 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:35 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:35 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:35 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:35 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:35 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:35 +0000
+
+
+Started POST "/articles/1/comments" for 172.17.42.1 at 2015-05-26 14:01:49 +0000
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n4M6eVvvf6P+9QOmm1VLS8GdRdsy0XFzzrHj0tYZ0HCTbSJV5LUkczig3CMbF8gvqo34KaLvodq5PP5T1qZhzw==", "comment"=>{"commenter"=>"Richpolis", "body"=>"Este comentario es para eliminar"}, "commit"=>"Create Comment", "article_id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["commenter", "Richpolis"], ["body", "Este comentario es para eliminar"], ["article_id", 1], ["created_at", "2015-05-26 14:01:49.203711"], ["updated_at", "2015-05-26 14:01:49.203711"]]
+  [1m[35m (14.0ms)[0m  commit transaction
+Redirected to http://brave-ford.codio.io:3000/articles/1
+Completed 302 Found in 24ms (ActiveRecord: 15.5ms)
+
+
+Started GET "/articles/1" for 172.17.42.1 at 2015-05-26 14:01:49 +0000
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 1]]
+  Rendered comments/_comment.html.erb (0.7ms)
+  Rendered comments/_form.html.erb (2.9ms)
+  Rendered articles/show.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 76ms (Views: 74.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 14:01:50 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:50 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 14:01:50 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 172.17.42.1 at 2015-05-26 14:01:50 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:50 +0000
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 14:01:50 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:50 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:50 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:50 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:50 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:50 +0000
+
+
+Started DELETE "/articles/1/comments/3" for 172.17.42.1 at 2015-05-26 14:01:55 +0000
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KfKYx09GhvZBLosxHI3VUjOQsXd3Yt1l41Lx0S8N3hMlHIDr8BzdJod7VLScz1Y2WIAMhedcDcyU3+xQL7JvrA==", "article_id"=>"1", "id"=>"3"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT  "comments".* FROM "comments" WHERE "comments"."article_id" = ? AND "comments"."id" = ? LIMIT 1  [["article_id", 1], ["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "comments" WHERE "comments"."id" = ?  [["id", 3]]
+  [1m[36m (6.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://brave-ford.codio.io:3000/articles/1
+Completed 302 Found in 11ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/articles/1" for 172.17.42.1 at 2015-05-26 14:01:55 +0000
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  Rendered comments/_comment.html.erb (0.8ms)
+  Rendered comments/_form.html.erb (2.0ms)
+  Rendered articles/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 70ms (Views: 68.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2015-05-26 14:01:55 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 172.17.42.1 at 2015-05-26 14:01:55 +0000
+
+
+Started GET "/assets/articles.css?body=1" for 172.17.42.1 at 2015-05-26 14:01:56 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 172.17.42.1 at 2015-05-26 14:01:56 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:56 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:56 +0000
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:56 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:56 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:56 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:56 +0000
+
+
+Started GET "/assets/articles.js?body=1" for 172.17.42.1 at 2015-05-26 14:01:56 +0000
+
+
+Started GET "/articles" for 172.17.42.1 at 2015-05-26 14:04:53 +0000
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.7ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 126ms (Views: 118.8ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/articles/1" for 172.17.42.1 at 2015-05-26 14:04:59 +0000
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9U0zYdX2CfTcQvzn/hkGmIJ8QZRhdDDs0VdiRpB7z935oytNaqxSJBoXI2J+W4X86Wz8ZvFK4EWm2n/HkMR+Yg==", "id"=>"1"}
+Filter chain halted as #<Proc:0x007f51c2d63498@/home/codio/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_controller/metal/http_authentication.rb:71> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
