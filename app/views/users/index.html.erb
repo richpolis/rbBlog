@@ -1,0 +1,30 @@
+
+	<h1>Listado de usuarios </h1>
+	<% flash.each do |key,value| %>
+		<div class="mensaje <%= key %>"><%= value %> </div>
+	<% end %>
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>Nombre</th>
+			<th>Email</th>
+			<th>Acciones</th>
+		</tr>
+		<% @users.each do |usuario| %>	
+		<tr>
+			<td><%= usuario.id %></td>
+			<td><%= link_to usuario.name, usuario %></td>
+			<td><%= usuario.email %></td>
+			<td>
+				<%= link_to "Editar", edit_user_path(usuario) %>
+				<%= link_to 'Eliminar', usuario, 
+			method: :delete, data: {confirm: 'Seguro quieres eliminar el registro?'} %>
+			</td>
+		</tr>
+		<% end %>
+		<% if @users.size == 0 %>
+			Usuarios no encontrados
+		<% end %>
+	</table>
+	<br/>
+	<%= link_to 'Nuevo usuario', '/signup' %>
